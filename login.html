@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+         *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(37, 35, 35, 0.848);
+}
+
+h1{
+    /* display: flex; */
+    /* justify-content: center; */
+    margin-bottom: 30px;
+}
+
+.login{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    max-height: 350px;
+    max-width: 400px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(206, 200, 200);
+}
+
+
+input{
+    /* height: 40px; */
+    /* width: 200px; */
+    padding: 15px;
+    outline: none;
+    border-radius: 5px;
+}
+
+#Email, #Password{
+    width: 350px;
+    text-align: center;
+    font-size: 18px;
+    border: none;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    /* align-items: cen ter; */
+}
+
+.btn button{
+    padding: 15px;
+    width: 350px;
+    background: rgb(47, 47, 151);
+    color: white;
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
+}
+
+.btn button:hover{
+    background: blue;
+}
+
+
+p{
+    position: absolute;
+    margin-top: 400px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+
+#Sign-up{
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: whitesmoke;
+} 
+
+#image{
+    position: absolute;
+    height: 22px;
+    margin-left: 270px;
+    margin-top: 65px;
+    color: gray;
+    opacity:0.7;
+}
+
+    </style>
+</head>
+<body>
+    
+    <div class="login">
+        <h1>Login Form</h1>
+        <input type="email" id="Email" placeholder="Enter your Email"> <br><br>
+        <input type="password" id="Password" placeholder="Enter your password">
+        <img src="img/png-1.png" id="image" >
+        <br><br>
+        
+        <div class="btn">
+        <button id="btn-login" >login</button>
+        </div>
+
+    </div>
+    
+    <p>Create Account<a href="index.html" id="Sign-up">Sign-up</a> </p>
+
+
+    <script src="login.js" type="module"></script>
+
+</body>
+</html>
